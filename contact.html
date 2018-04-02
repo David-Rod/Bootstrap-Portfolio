@@ -1,35 +1,43 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-            crossorigin="anonymous">
-        <link href="images/bootstrapstyle.css" rel="stylesheet" type="text/css">
-    </head>
+<head>
+    <title>David's Portfolio- Contact Me</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link href="assets/stylesheet.css" rel="stylesheet" type="text/css">
 
-    <body>
-        
+</head>
 
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <h1>David Rodriguez</h1>
+<body>
+        <div class="navbar">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+            </ul>
+        </div>
+
+    <div class="container">
+
+        <div class="nameheader">
+            <h1>David Rodriguez</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-md-7">
+                <div class="container_section">
                     <br/>
-                    <div class="jumbotron">
-                        <section id="mainsection">
-                            <h1>Contact</h1>
-                            <form id="form">
+                    <div>
+                        <section>
+                            <h2>Contact</h2>
+                            <form class="form">
                                 Name:
                                 <br/>
                                 <input type="text" name="firstname">
@@ -38,45 +46,50 @@
                                 <input type="text" name="firstname">
                                 <br/> Message:
                                 <br/>
-                                <textarea max-width="100%">
+                                <textarea type="text" name="commentsection" max-width="100%">
                                 </textarea>
                                 <br/>
                                 <br/>
-                                <button id="button" type="button" name="submit">Submit</button>
+                                <button class="form_button" type="button" name="submit">Submit</button>
                             </form>
                         </section>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card" style="width: 20rem;">
-                        <div class="card-body">
-                            <section id="navbox">
-                                <h2 text-align="center">Connect with Me</h2>
-                                <div class="container">
+            </div>
+
+            <div class="col-md-5">
+                <div class="container_section">
+                    <br/>
+                    
+                    <h2 id="connect-header">Connect with Me</h2>
+                    <div class="card-body">
+                        <section id="navbox">
+                            <div>
+                                <section id="socialsection">
                                     <div class="row">
-                                        <div class="col-md-4">
-                                            <img src="images/github.png" class="social" alt="github image" max-width="11%" />
+                                        <div class="column">
+                                            <img src="assets/img/github.png" class="social_img" alt="github image" />
                                         </div>
-                                        <div class="col-md-4">
-                                            <img src="images/linkedin.png" class="social" alt="linkedin image" max-width="11%" />
+                                        <div class="column">
+                                            <img src="assets/img/linkedin.png" class="social_img" alt="linkedin image" />
                                         </div>
-                                        <div class="col-md-4">
-                                            <img src="images/stackoverflow.png" class="social" alt="stackedoverflow image" max-width="11%" />
+                                        <div class="column">
+                                            <img src="assets/img/stackoverflow.png" class="social_img" alt="stackedoverflow image" />
                                         </div>
                                     </div>
-                                </div>
-                            </section>
-                        </div>
+                                </section>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div class="card text-center">
-            <div class="card-body">
-                <p class="card-text">&#169;Copyright 2017 David Rodriguez</p>
-            </div>
-        </div>
-    </body>
+    </div>
+
+    <footer>
+        <p id="footertext">&#169;Copyright 2017 David Rodriguez</p>
+    </footer>
+
+</body>
 
 </html>
